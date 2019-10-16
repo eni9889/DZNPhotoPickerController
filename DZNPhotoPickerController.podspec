@@ -1,4 +1,4 @@
-@version = "1.6.3"
+@version = "1.6.4"
 
 Pod::Spec.new do |s|
   s.name         	  = "DZNPhotoPickerController"
@@ -32,8 +32,10 @@ Pod::Spec.new do |s|
   s.subspec 'Services' do |ss|
     ss.source_files = 'Source/Classes/Services/*.{h,m}',
                       'Source/Classes/Core/DZNPhotoPickerControllerConstants.{h,m}'
-    ss.dependency 'AFNetworking/NSURLConnection'
-    ss.dependency 'AFNetworking/NSURLSession'
+
+    ss.dependency 'AFNetworking/NSURLConnection', '2.4.1'
+    ss.dependency 'AFNetworking/NSURLSession', '2.4.1'
+
     ss.prefix_header_contents = '#import <MobileCoreServices/MobileCoreServices.h>',
                                 '#import <SystemConfiguration/SystemConfiguration.h>'
   end
