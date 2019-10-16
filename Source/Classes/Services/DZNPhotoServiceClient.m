@@ -14,9 +14,6 @@
 #import "DZNPhotoMetadata.h"
 #import "DZNPhotoTag.h"
 
-#import "AFNetworkActivityIndicatorManager.h"
-#import "GROAuth2SessionManager.h"
-
 @interface DZNPhotoServiceClient ()
 @property (nonatomic, copy) DZNHTTPRequestCompletion completion;
 @end
@@ -36,9 +33,7 @@
         
         self.requestSerializer = [AFJSONRequestSerializer serializer];
         self.responseSerializer = [AFHTTPResponseSerializer serializer];
-        
-        [[AFNetworkActivityIndicatorManager sharedManager] setEnabled:YES];
-        
+                
         [self configureHTTPHeader];
     }
     return self;
