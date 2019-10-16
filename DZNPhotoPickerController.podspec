@@ -1,4 +1,4 @@
-@version = "1.6.2"
+@version = "1.6.3"
 
 Pod::Spec.new do |s|
   s.name         	  = "DZNPhotoPickerController"
@@ -34,7 +34,6 @@ Pod::Spec.new do |s|
                       'Source/Classes/Core/DZNPhotoPickerControllerConstants.{h,m}'
     ss.dependency 'AFNetworking/NSURLConnection'
     ss.dependency 'AFNetworking/NSURLSession'
-    ss.dependency 'GROAuth2SessionManager'
     ss.prefix_header_contents = '#import <MobileCoreServices/MobileCoreServices.h>',
                                 '#import <SystemConfiguration/SystemConfiguration.h>'
   end
