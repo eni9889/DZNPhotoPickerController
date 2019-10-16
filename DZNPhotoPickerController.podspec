@@ -33,8 +33,8 @@ Pod::Spec.new do |s|
     ss.source_files = 'Source/Classes/Services/*.{h,m}',
                       'Source/Classes/Core/DZNPhotoPickerControllerConstants.{h,m}'
 
-    ss.dependency 'AFNetworking/NSURLConnection', '2.4.1'
-    ss.dependency 'AFNetworking/NSURLSession', '2.4.1'
+    ss.dependency 'AFNetworking/NSURLConnection', "~> 2.0"
+    ss.dependency 'AFNetworking/NSURLSession', "~> 2.0"
 
     ss.prefix_header_contents = '#import <MobileCoreServices/MobileCoreServices.h>',
                                 '#import <SystemConfiguration/SystemConfiguration.h>'

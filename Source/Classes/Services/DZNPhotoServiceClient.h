@@ -8,7 +8,7 @@
 //  Licence: MIT-Licence
 //
 
-#import "AFNetworking.h"
+#import "AFHTTPRequestOperationManager.h"
 #import "DZNPhotoServiceClientProtocol.h"
 #import "DZNPhotoPickerControllerConstants.h"
 
